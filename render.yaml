@@ -3,7 +3,7 @@ services:
     name: fake-twitter-account-detector
     env: python
     buildCommand: ""
-    startCommand: python src/web_app.py
+    startCommand: python web_app.py
     envVars:
       - key: TWITTER_BEARER_TOKEN
         value: YOUR_TOKEN_HERE
