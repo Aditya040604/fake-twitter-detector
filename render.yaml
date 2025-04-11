@@ -2,8 +2,8 @@ services:
   - type: web
     name: fake-twitter-account-detector
     env: python
-    buildCommand: ""
+    buildCommand: pip install -r requirements.txt
     startCommand: python web_app.py
     envVars:
       - key: TWITTER_BEARER_TOKEN
-        value: YOUR_TOKEN_HERE
+        sync: false
